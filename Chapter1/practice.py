@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def first_api():
-    return {'meaasge':  "Hello Aishwarya, Welcome to FAST API"}
+    return {'meaasge':  "Hello Nidhi, Welcome to FAST API"}
