@@ -17,9 +17,9 @@ BOOKS = {
 # async def first_api():
 #     return {'meaasge':  "Hello Sai, Welcome to FAST API"}
 
-# @app.get("/{book_name}")
-# async def read_book(book_name: str):
-#     return BOOKS[book_name]
+@app.get("/{book_name}")
+async def read_book(book_name: str):
+    return BOOKS[book_name]
 
 @app.get("/")
 async def read_all_books(skip_book: Optional[str] = None):
